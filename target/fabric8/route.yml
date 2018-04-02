@@ -1,0 +1,8 @@
+metadata:
+  name: spring-petclinic-customers-service
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: customer-service

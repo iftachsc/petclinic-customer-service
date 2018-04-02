@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    name: spring-petclinic-customers-service
+  spec:
+    tags:
+    - from:
+        kind: ImageStreamImage
+        name: spring-petclinic-customers-service@sha256:25678a8672396262b5b7e25f3717d8f1d2306198ab43cc5db4a11f1eddf521aa
+        namespace: petclinic-develop
+      name: 1.5.9

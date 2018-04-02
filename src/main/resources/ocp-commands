@@ -1,0 +1,19 @@
+create: oc new-app --template=mysql-persistent \
+    -p MYSQL_USER=mysql \
+    -p MYSQL_PASSWORD=mysql \
+    -p MYSQL_DATABASE=customer_db \
+    -p DATABASE_SERVICE_NAME=customer-db
+
+
+mvn io.fabric8:fabric8-maven-plugin:3.3.5:setup
+oc get ServiceInstance #provisioned services 
+delete: oc delete all -l app=mysql-persistent
+
+#if you want to access configmap/secret with spring-cloud-k8s you need read on the project to list them
+oc policy add-role-to-user view system:serviceaccount:$(oc project -q):default -n $(oc project -q)
+oc policy add-role-to-user view --serviceaccount=default
+
+
+oc delete all -l project=spring-petclinic-customers-service
+
+
