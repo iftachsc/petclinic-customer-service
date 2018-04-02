@@ -128,7 +128,33 @@
 					</dependency>
 					-->
   				</dependencies>
-  			</profile>           
+  			</profile>   
+	    		<profile>
+  			<id>default</id>
+  			<build>
+    				<resources>
+      				<resource>
+	        				<directory>src/main/config-openshift</directory>
+      				</resource>
+      				<resource>
+	        				<directory>src/main/resources</directory>
+    	  				</resource>
+    	  			</resources>
+    	  		</build>
+    	  			<dependencies>
+    					<dependency>
+    						<groupId>mysql</groupId>
+    						<artifactId>mysql-connector-java</artifactId>
+  					</dependency>
+					<!--
+  					<dependency>
+    						<groupId>io.fabric8</groupId>
+    						<artifactId>spring-cloud-starter-kubernetes</artifactId>
+    						<version>0.1.6</version>
+					</dependency>
+					-->
+  				</dependencies>
+  			</profile>         
     </profiles>
   <build>
     <plugins>
