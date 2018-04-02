@@ -120,11 +120,13 @@
     						<groupId>mysql</groupId>
     						<artifactId>mysql-connector-java</artifactId>
   					</dependency>
+					<!--
   					<dependency>
     						<groupId>io.fabric8</groupId>
     						<artifactId>spring-cloud-starter-kubernetes</artifactId>
     						<version>0.1.6</version>
 					</dependency>
+					-->
   				</dependencies>
   			</profile>           
     </profiles>
