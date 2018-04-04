@@ -1,9 +1,0 @@
-metadata:
-  name: spring-petclinic-customers-service
-spec:
-  ports:
-    - name: http
-      port: 80
-      protocol: TCP
-      targetPort: 8088
-  

@@ -1,8 +1,0 @@
-metadata:
-  name: ${project.artifactId}-yay
-spec:
-  port:
-    targetPort: http
-  to:
-    kind: Service
-    name: customer-service
