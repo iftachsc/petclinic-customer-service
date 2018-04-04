@@ -16,7 +16,7 @@ data:
       - name: jvm_memory_bytes_used
         description: JVM Memory
       - name: jvm_threads_current
-        description: JVM Thread#
+        description: JVM Thread Count
 
         
         
