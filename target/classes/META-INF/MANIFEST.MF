@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Implementation-Title: spring-petclinic-customers-service
+Implementation-Title: customer-service
 Implementation-Version: 1.5.9
 Built-By: yftach.shenbaum
 Implementation-Vendor-Id: org.springframework.samples.petclinic.client
 Build-Jdk: 1.8.0_121
 Implementation-URL: http://projects.spring.io/spring-boot/spring-petcl
- inic-microservices/spring-petclinic-customers-service/
+ inic-microservices/customer-service/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
