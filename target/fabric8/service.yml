@@ -1,5 +1,5 @@
 metadata:
-  name: customer-service
+  name: spring-petclinic-customers-service
 spec:
   ports:
     - name: http

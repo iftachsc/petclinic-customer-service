@@ -1,14 +1,14 @@
 metadata:
-  name: customer-service
+  name: spring-petclinic-customers-service
   labels:
-    project: customer-service
+    project: spring-petclinic-customers-service
     version: 1.5.9
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        project: customer-service
+        project: spring-petclinic-customers-service
         version: 1.5.9
     spec:
       containers:
@@ -45,5 +45,5 @@ spec:
       volumes:
       - name: hawkular-openshift-agent
         configMap:
-          name: customer-service-metrics-config
+          name: spring-petclinic-customers-service-metrics-config
       
